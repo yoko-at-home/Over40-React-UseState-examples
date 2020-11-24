@@ -1,18 +1,15 @@
-import React from 'react'
-import WithOutUseStateCounter from './components/WithOutUseState'
-import WithUseStateCounter from './components/WithUseState'
-import UseStateArray from './components/UseStateArray'
-import Title from './components/Title'
+import React from "react";
+
+import UseStateArray from "./components/UseStateArray";
+import Title from "./components/Title";
 
 function App() {
   return (
-    <div className='container'>
-      <WithOutUseStateCounter />
-      <WithUseStateCounter />
+    <div className="container">
       <Title />
       <UseStateArray />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
