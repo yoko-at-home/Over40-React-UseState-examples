@@ -18,7 +18,7 @@ function App() {
       <UseStateObjectIndividual />
       <UseStateCounterComplex/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
