@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
+//Hookは小文字のuseで始める useState, useEffect, useCallback ...
+//コンポーネント名は必ず大文字で始める
+//関数/コンポーネント内で使用する
+//条件の中で使えない=> if () {}
 
 function WithUseStateCounter() {
   const [count, setCount] = useState(0)
+  //const [count, setCount] = React.useState(0)//とすることもできる
   const reset = () => {
     setCount(0)
   }

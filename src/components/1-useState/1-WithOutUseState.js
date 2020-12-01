@@ -2,9 +2,7 @@ import React from 'react'
 
 function WithOutUseStateCounter() {
   const countNotState = 0
-  console.log(countNotState)
-  console.log(countNotState + 1)
-  console.log(countNotState - 1)
+  console.log(countNotState+1)
 
   return (
     <section className='container'>
@@ -13,9 +11,7 @@ function WithOutUseStateCounter() {
       <button className='btn2' onClick={() => countNotState + 1}>
         カウントアップ (not state) (+1)
       </button>
-      <button className='btn2' onClick={() => countNotState - 1}>
-        カウントダウン (not state) (-1)
-      </button>
+
     </section>
   )
 }
