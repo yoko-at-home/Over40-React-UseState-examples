@@ -7,18 +7,18 @@ import UseStateObject from './components/1-useState/4-UseStateObject'
 import UseStateObjectIndividual from './components/1-useState/5-UseStateObjectIndividual'
 import UseStateCounterComplex from './components/1-useState/6-UseStateCounterComplex'
 
-function App() {
+function UseStateExplanation() {
   return (
     <div className='container'>
-      <WithOutUseStateCounter />
+      {/* <WithOutUseStateCounter /> */}
       <WithUseStateCounter />
       {/* <Title /> */}
-      <UseStateArray />
+      {/* <UseStateArray />
       <UseStateObject />
       <UseStateObjectIndividual />
-      <UseStateCounterComplex/>
+      <UseStateCounterComplex /> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default UseStateExplanation

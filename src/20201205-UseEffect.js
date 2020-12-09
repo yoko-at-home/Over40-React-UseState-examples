@@ -4,15 +4,15 @@ import UseEffectCleanup from './components/2-useEffect/Cleanup'
 import UseEffectFetchData from './components/2-useEffect/FetchData'
 import Alternative from './components/2-useEffect/Slider/Alternative'
 
-function App2() {
+function UseEffectExplanation() {
   return (
     <div className='container'>
       <UseEffectBasics />
       <UseEffectCleanup />
       <UseEffectFetchData />
-      <Alternative/>
+      <Alternative />
     </div>
   )
 }
 
-export default App2
+export default UseEffectExplanation

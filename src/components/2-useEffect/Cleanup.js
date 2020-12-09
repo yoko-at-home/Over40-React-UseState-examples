@@ -5,19 +5,17 @@ const UseEffectCleanup = () => {
 
   const checkSize = () => {
     setSize(window.innerWidth)
-  };
-
+  }
+  console.log(size)
   useEffect(() => {
-    console.log('useEffect');
-    window.addEventListener('resize', checkSize);
+    // console.log('useEffect)
+    window.addEventListener('resize', checkSize)
     // cleanup function
     return () => {
-      console.log('removeEventListener')
+      console.log('cleanup')
       window.removeEventListener('resize', checkSize)
     }
-    // second argument
   },[])
-  console.log('render')
   return (
     <>
       <div className='container2'>

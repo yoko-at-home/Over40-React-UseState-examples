@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from 'react-dom'
-// import App from './App'
-import UseEffect from './UseEffect'
+import App from './20201212-conditional-rendering'
+
 import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <UseEffect />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 )

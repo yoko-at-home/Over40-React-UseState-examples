@@ -3,22 +3,24 @@ import React, { useState, useEffect } from 'react'
 // cleanup function
 // second parameter
 const UseEffectBasics = () => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(0)
+
+  //必ずcallback functionを渡す
+  // useEffect(() => {})
 
   useEffect(() => {
-    //必ずcallback functionを渡す
-    // console.log('useEffectを呼び出す')
+    // console.log('useEffectを呼び出しました〜')
     if (value > 0) {
-      document.title = `New Messages(${value})`
+      document.title = `New Messages: ${value}`
     }
-  }, [])
-  //からの配列を渡すと一度だけ呼ばれる
+  }, [value])
+  //空の配列を渡すと一度だけ呼ばれる
 
   useEffect(() => {
-    // console.log('hello world')
-  },[])
+    console.log('hello world')
+  }, [value])
 
-  // console.log('componentのレンダリング')
+  // console.log('componentがレンダリングされました〜')
   return (
     <>
       <div className='container2'>

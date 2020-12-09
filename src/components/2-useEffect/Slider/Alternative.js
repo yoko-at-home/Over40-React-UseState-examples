@@ -3,9 +3,10 @@ import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
 import data from './data';
 import './Alternative.styles.css';
+
 function Alternative() {
   const [people, setPeople] = useState(data)
-  const [index, setIndex] = React.useState(0)
+  const [index, setIndex] = useState(0)
 
   const nextSlide = () => {
     setIndex((oldIndex) => {
